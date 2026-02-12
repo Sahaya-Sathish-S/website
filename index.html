@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <div class="form-section">
+            <label>Student Name</label>
+            <input type="text" id="name">
+
+            <label>Age</label>
+            <input type="number" id="age">
+
+            <label>Department</label>
+            <input type="text" id="dept">
+
+            <button onclick="addStudent()">Add Student</button>
+            <button onclick="clearStudents()" class="clear-btn">Clear All</button>
+        </div>
+
+        <div class="table-section">
+            <h2>Student List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
