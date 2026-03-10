@@ -2,25 +2,54 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DMI College Day & Sports Fest</title>
+<title>DMI College Day & Sports Fest 2026</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="nav-logo">
+<img src="logo.png">
+<span>DMI Fest 2026</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#sports">Sports</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- HERO SECTION -->
 
 <header class="hero">
 
 <div class="overlay"></div>
 
-<div class="content">
+<div class="hero-content">
 
 <img src="logo.png" class="logo">
 
@@ -29,6 +58,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <p class="subtitle">
 Celebrating Talent • Innovation • Sportsmanship
 </p>
+
+<p class="event-info">
+📍 DMI Engineering College, Aralvaimozhi
+</p>
+
+<div id="countdown"></div>
 
 <a href="#events">
 <button class="glow-btn">Explore Events</button>
@@ -39,20 +74,30 @@ Celebrating Talent • Innovation • Sportsmanship
 </header>
 
 
-<section class="about">
 
-<h2>About the Celebration</h2>
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About DMI Engineering College</h2>
 
 <p>
-DMI Engineering College proudly presents the annual
-<strong>College Day & Sports Fest 2026</strong>.
-This grand celebration highlights student talent,
-sportsmanship, cultural diversity, and academic excellence.
-Students participate in various competitions and sports events.
+
+DMI Engineering College, Aralvaimozhi, Kanyakumari District,
+is committed to academic excellence, innovation, and student development.
+Our annual <strong>College Day & Sports Fest 2026</strong> celebrates
+student creativity, technical talent, and sportsmanship.
+
+Students from multiple departments participate in cultural programs,
+technical competitions, and sports tournaments.
+
 </p>
 
 </section>
 
+
+
+<!-- EVENTS -->
 
 <section id="events">
 
@@ -60,59 +105,110 @@ Students participate in various competitions and sports events.
 
 <div class="cards">
 
+
+<a href="registration.html?event=Cultural Program">
 <div class="card">
+
 <i class="fa-solid fa-music"></i>
+
 <h3>Cultural Programs</h3>
-<p>Dance, music performances and drama shows.</p>
-</div>
 
-<div class="card">
-<i class="fa-solid fa-futbol"></i>
-<h3>Sports Events</h3>
-<p>Cricket, football, athletics and volleyball.</p>
-</div>
+<p>Dance, music performances, and drama shows.</p>
 
-<div class="card">
-<i class="fa-solid fa-trophy"></i>
-<h3>Competitions</h3>
-<p>Quiz, coding contests and hackathons.</p>
 </div>
+</a>
+
+
+<a href="registration.html?event=Coding Contest">
+<div class="card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Coding Contest</h3>
+
+<p>Competitive programming and hackathon.</p>
+
+</div>
+</a>
+
+
+<a href="registration.html?event=Quiz Competition">
+<div class="card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>Quiz Competition</h3>
+
+<p>Technical and general knowledge quiz.</p>
+
+</div>
+</a>
 
 </div>
 
 </section>
 
 
-<section class="sports">
 
-<h2>Sports Management</h2>
+<!-- SPORTS -->
+
+<section id="sports" class="sports">
+
+<h2>Sports Events</h2>
 
 <div class="cards">
 
+
+<a href="registration.html?event=Volleyball">
 <div class="card">
+
 <i class="fa-solid fa-volleyball"></i>
+
 <h3>Volleyball</h3>
-</div>
 
+</div>
+</a>
+
+
+<a href="registration.html?event=Cricket">
 <div class="card">
+
 <i class="fa-solid fa-baseball"></i>
+
 <h3>Cricket</h3>
-</div>
 
+</div>
+</a>
+
+
+<a href="registration.html?event=Table Tennis">
 <div class="card">
+
 <i class="fa-solid fa-table-tennis-paddle-ball"></i>
-<h3>Table Tennis</h3>
-</div>
 
-<div class="card">
-<i class="fa-solid fa-running"></i>
-<h3>Athletics</h3>
+<h3>Table Tennis</h3>
+
 </div>
+</a>
+
+
+<a href="registration.html?event=Athletics">
+<div class="card">
+
+<i class="fa-solid fa-running"></i>
+
+<h3>Athletics</h3>
+
+</div>
+</a>
 
 </div>
 
 </section>
 
+
+
+<!-- EVENT HIGHLIGHTS -->
 
 <section class="schedule">
 
@@ -121,6 +217,8 @@ Students participate in various competitions and sports events.
 <ul>
 
 <li>🎤 Cultural Fest – Dance & Music</li>
+
+<li>💻 Coding Hackathon</li>
 
 <li>⚽ Inter Department Sports Competition</li>
 
@@ -133,15 +231,55 @@ Students participate in various competitions and sports events.
 </section>
 
 
+
+<!-- GALLERY -->
+
+<section id="gallery" class="gallery">
+
+<h2>Event Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p><i class="fa-solid fa-location-dot"></i> Aralvaimozhi, Kanyakumari District, Tamil Nadu</p>
+
+<p><i class="fa-solid fa-envelope"></i> dmi@college.edu</p>
+
+<p><i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX</p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
 <footer>
 
 <p>© 2026 DMI Engineering College</p>
+
 <p>Department of Science & Humanities</p>
 
 </footer>
 
+
+
 <script src="script.js"></script>
 
 </body>
-
 </html>

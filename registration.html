@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Event Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="register-page">
+
+
+<div class="form-container">
+
+<h1 id="eventTitle">Event Registration</h1>
+
+<form id="registrationForm">
+
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email ID" required>
+
+<input type="tel" placeholder="Contact Number" required>
+
+<input type="text" placeholder="College Name" required>
+
+
+<select required>
+<option value="">Select Degree</option>
+<option>B.E</option>
+<option>B.Tech</option>
+<option>M.E</option>
+<option>M.Tech</option>
+</select>
+
+
+<input type="text" placeholder="Department" required>
+
+
+<select required>
+<option value="">Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+
+<input type="text" placeholder="Team Name (If Team Event)">
+
+
+
+<h3>Team Members</h3>
+
+<input type="text" placeholder="Member 1">
+
+<input type="text" placeholder="Member 2">
+
+<input type="text" placeholder="Member 3">
+
+<input type="text" placeholder="Member 4">
+
+
+
+<label>Select Team Captain</label>
+
+<select>
+<option>You</option>
+<option>Member 1</option>
+<option>Member 2</option>
+<option>Member 3</option>
+<option>Member 4</option>
+</select>
+
+
+<button type="submit" class="glow-btn">
+Register Now
+</button>
+
+</form>
+
+</div>
+
+
+
+<div id="successPopup" class="popup">
+
+<div class="popup-content">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Registration Successful!</h2>
+
+<p>Thank you for registering.</p>
+
+<a href="index.html">
+<button class="glow-btn">Back to Home</button>
+</a>
+
+</div>
+
+</div>
+
+
+<script src="registration.js"></script>
+
+</body>
+</html>
